@@ -1,0 +1,11 @@
+ services:
+   api-students:
+     build: ./api-students
+     image: cortez10ian/api-students
+     ports:
+       - 8000:8000
+   websimple:
+     build: ./websimple
+     image: cortez10ian/websimple
+     ports:
+       - 8080:80
